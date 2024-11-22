@@ -1,0 +1,61 @@
+/* Base styles for desktop */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+.project {
+    display: inline-block;
+    width: calc(50% - 40px);
+    margin: 10px;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    /* Stack sections vertically */
+    section {
+        margin: 10px 0;
+    }
+
+    /* Adjust text size */
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    /* Adjust project layout */
+    .project {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Adjust image size */
+    .project img {
+        width: 100%;
+        height: auto;
+    }
+}
